@@ -1,12 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://be2iemrpun0l0"]
+[gd_scene load_steps=4 format=3 uid="uid://be2iemrpun0l0"]
 
 [ext_resource type="Texture2D" uid="uid://krb84bjikw0c" path="res://ufoGreen.png" id="1_pe3os"]
+[ext_resource type="Script" path="res://player.gd" id="1_u1maw"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_tca43"]
 radius = 45.0
 
 [node name="Player" type="RigidBody2D"]
 gravity_scale = 1.66533e-16
+script = ExtResource("1_u1maw")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_pe3os")
