@@ -6,4 +6,16 @@
 position = Vector2(2.08165e-12, 2.08165e-12)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(559, 459)
+scale = Vector2(1.53906, 0.773438)
+texture = ExtResource("1_1101l")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(296, 462)
+scale = Vector2(1.53906, 0.773438)
+texture = ExtResource("1_1101l")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(594.75, 203.75)
+scale = Vector2(0.964844, 0.957031)
 texture = ExtResource("1_1101l")
