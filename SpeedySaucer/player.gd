@@ -3,13 +3,18 @@ extends RigidBody2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	test()
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
+	pass
+	
 func _process(delta):
 	pass
 	
-func test():
-	var my_variable = (2 + 3) * 5
-	print(my_variable)
+func _physics_process(delta):
+	var force = 1000
+	if Input.is_action_pressed("move_right"):
+		apply_force(Vector2(force, 0))
+	if Input.is_action_pressed("move_left"):
+		apply_force(Vector2(-force, 0))
+	if Input.is_action_pressed("move_up"):
+		apply_force(Vector2(0, -force))
+	if Input.is_action_pressed("move_down"):
+		apply_force(Vector2(0, force))
